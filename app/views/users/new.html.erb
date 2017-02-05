@@ -1,0 +1,35 @@
+
+<%= render 'shared/header' %>
+
+
+<div class="container">
+
+    <h1>ユーザー登録</h1>
+
+<%= form_for(@user) do |f| %>
+
+<%= f.label :名前 %><br>
+<%= f.text_field :name %><br>
+
+<%= f.label :メールアドレス %><br>
+<%= f.email_field :email %><br>
+
+<%= f.label :パスワード %><br>
+<%= f.password_field :password %><br>
+
+<%= f.label :パスワード %><br>
+<%= f.password_field :password %><br>
+
+<%= f.submit '送信' %>
+
+
+
+
+<% end %>
+
+
+
+</div>
+
+
+<%= render 'shared/footer' %>

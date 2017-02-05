@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+
+
+
+ footer {
+   background-color: #000;
+   color: #FFF;
+   text-align: center;
+   padding: 10px;
+ }
