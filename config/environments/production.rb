@@ -79,9 +79,6 @@ Rails.application.configure do
 
 
 
-# ここから編集
-
-config.serve_static_assets = true
 
 
 
