@@ -6,21 +6,21 @@
 
     <h1>ユーザー登録</h1>
 
-<%= form_for(@user) do |f| %>
+    <%= form_for(@user) do |f| %>
 
-<%= f.label :名前 %><br>
-<%= f.text_field :name %><br>
+    <%= f.label :名前 %><br>
+    <%= f.text_field :name %><br>
 
-<%= f.label :メールアドレス %><br>
-<%= f.email_field :email %><br>
+    <%= f.label :メールアドレス %><br>
+    <%= f.email_field :email %><br>
 
-<%= f.label :パスワード %><br>
-<%= f.password_field :password %><br>
+    <%= f.label :パスワード %><br>
+    <%= f.password_field :password %><br>
 
-<%= f.label :パスワード %><br>
-<%= f.password_field :password %><br>
+    <%= f.label :パスワード %><br>
+    <%= f.password_field :password %><br>
 
-<%= f.submit '送信' %>
+    <%= f.submit '送信' %>
 
 
 

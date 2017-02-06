@@ -2,15 +2,32 @@
 
 <%= render 'shared/header' %>
 
+<div class="container">
+
+  <div class="coach-new-main">
+
+<h2>コーチ登録する</h2>
 
 
-<h1>Coachs#new</h1>
-<p>Find me in app/views/coachs/new.html.erb</p>
+      <%= form_for @coach,:url => {:action => :create} do |f| %>
+
+      <%= f.label :性別 %><br>
+
+      <%= f.text_field :sex %><br>
+
+
+      <%= f.submit '登録する' %>
 
 
 
 
+<% end %>
 
 
+
+  </div>
+
+</div>
+<!-- container -->
 
 <%= render 'shared/footer' %>
