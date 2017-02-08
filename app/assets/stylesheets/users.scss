@@ -14,3 +14,46 @@
     }
 
 }
+
+
+
+// edit.html.erb
+
+.user-edit-main {
+
+  margin-bottom: 100px;
+
+  h1 {
+    margin-bottom: 70px;
+  }
+
+}
+
+
+.user-edit-left {
+
+
+  li {
+    list-style: none;
+
+    a {
+      color: #333;
+      padding: 20px;
+      background-color: #f6f8fa;
+      display: block;
+    }
+  }
+}
+
+
+// show.html.erb
+
+
+.user-show-left {
+
+    img {
+      width: 140px;
+      height: 140px;
+    }
+
+}
