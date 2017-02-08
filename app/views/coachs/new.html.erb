@@ -8,18 +8,32 @@
 
   <h2>コーチ登録する</h2>
 
+    <ul>
 
       <%= form_for @coach, :url => {:action => :create} do |f| %>
 
-        <%= f.label :性別 %><br>
-        <%= f.text_field :sex %><br>
+
+      <li><%= f.label :性別 %></li>
+
+    <label><%= f.radio_button :sex, "男" %>男</label>
+    <label><%= f.radio_button :sex, "女" %>女</label>
+
+      <li><%= f.label :年齢 %></li>
+      <%= f.select :age, [["男", "男"], ["女", "女"]] %>
+
+      <li><%= f.label :エリア %></li>
+      <li><%= f.text_field :area %></li>
+
+      <li><%= f.label :ジャンル %></li>
+      <li><%= f.text_field :jangle %></li>
 
 
-        <%= f.submit '登録する' %>
+      <%= f.submit '登録する' %>
 
       <% end %>
 
 
+    </ul>
 
   </div>
 

@@ -24,7 +24,7 @@ class CoachsController < ApplicationController
   private
 
             def coach_params
-              params.require(:coach).permit(:sex)
+              params.require(:coach).permit(:sex, :age, :area, :jangle)
             end
 
 
