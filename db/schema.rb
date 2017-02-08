@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206102531) do
+ActiveRecord::Schema.define(version: 20170208034054) do
 
   create_table "coaches", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -20,11 +20,12 @@ ActiveRecord::Schema.define(version: 20170206102531) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.string   "name"
     t.string   "email"
     t.string   "icon"
+    t.string   "password_digest"
   end
 
 end
