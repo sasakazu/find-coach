@@ -4,24 +4,27 @@
 
 <div class="container">
 
+  <div class="user-new-main">
+
+
     <h1>ユーザー登録</h1>
 
     <%= form_for(@user) do |f| %>
 
-    <%= f.label :名前 %><br>
-    <%= f.text_field :name %><br>
+    <li><%= f.label :名前 %></li>
+    <li><%= f.text_field :name %></li>
 
-    <%= f.label :メールアドレス %><br>
-    <%= f.email_field :email %><br>
+    <li><%= f.label :メールアドレス %></li>
+    <li><%= f.email_field :email %></li>
 
 
-    <%= f.label :パスワード %><br>
-    <%= f.password_field :password %><br>
+    <li><%= f.label :パスワード %></li>
+    <li><%= f.password_field :password %></li>
 
-    <%= f.label :パスワード %><br>
-    <%= f.password_field :password_confirmation %><br>
+    <li><%= f.label :パスワード %></li>
+    <li><%= f.password_field :password_confirmation %></li>
 
-    <%= f.submit '送信' %>
+    <li><%= f.submit '送信' %></li>
 
 
 
@@ -29,6 +32,7 @@
 <% end %>
 
 
+</div>
 
 </div>
 

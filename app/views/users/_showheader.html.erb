@@ -1,0 +1,21 @@
+
+<div class="container">
+
+
+
+  <div class="row user-show-main">
+
+    <div class="col-md-4 user-show-left">
+      <img src="/images/kids.jpg" alt="..." class="img-circle">
+    </div>
+
+    <div class="col-md-8 user-show-right">
+      <h2><%= @user.name %></h2>
+      <p><%= @user.email %></p>
+      <%= link_to 'プロフィール編集', edit_user_path %>
+    </div>
+
+  </div>
+
+
+</div>
