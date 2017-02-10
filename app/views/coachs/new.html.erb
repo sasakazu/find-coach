@@ -6,27 +6,20 @@
 
   <div class="coach-new-main">
 
-  <h2>コーチ登録する</h2>
+  <h2>コーチになる</h2>
 
     <ul>
-
       <%= form_for @coach, :url => {:action => :create} do |f| %>
 
-          <li><%= f.label :名前 %></li>
-          <li><%= f.text_field :name %></li>
+      <li><%= f.label :名前 %></li>
+      <li><%= f.text_field :name %></li>
 
+      <li><%= f.label :性別 %></li>
+      <label><%= f.radio_button :sex, "男" %>男</label>
+      <label><%= f.radio_button :sex, "女" %>女</label>
 
-
-
-
-          <li><%= f.label :性別 %></li>
-          <label><%= f.radio_button :sex, "男" %>男</label>
-          <label><%= f.radio_button :sex, "女" %>女</label>
-
-
-
-            <li><%= f.label :年齢 %></li>
-            <%= f.select :age, { "1" => "1",
+      <li><%= f.label :年齢 %></li>
+      <%= f.select :age, { "1" => "1",
                                       "2" => "2",
 
                                       "3" => "3",
@@ -37,24 +30,18 @@
                                       "8" => "8",
                                       "9" => "9"
 
-                                    }
+                                    } %>
 
-                                      %>
+      <li><%= f.label :エリア %></li>
+      <li><%= f.text_field :area %></li>
 
-
-
-            <li><%= f.label :エリア %></li>
-            <li><%= f.text_field :area %></li>
-
-            <li><%= f.label :ジャンル %></li>
-            <li><%= f.text_field :jangle %></li>
+      <li><%= f.label :ジャンル %></li>
+      <li><%= f.text_field :jangle %></li>
 
 
-            <%= f.submit '登録する' %>
+      <%= f.submit '登録する' %>
 
       <% end %>
-
-
     </ul>
 
   </div>

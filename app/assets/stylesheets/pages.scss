@@ -58,3 +58,22 @@
   background-color: rgba(0, 0, 0, .7);
   text-align: center;
 }
+
+
+.about-btn {
+  a {
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+  }
+  a:hover {
+    text-decoration: none;
+    background-color: #FFF;
+    color: #000;
+    transition: all 0.3s ease-out;
+  }
+}
