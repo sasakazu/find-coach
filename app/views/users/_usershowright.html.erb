@@ -2,5 +2,47 @@
 
 
 <div class="col-md-8 user-edit-right">
-  プロフィール
+  <h5>プロフィール編集</h5>
+
+  <%= form_for @user do |f| %>
+
+  <div class="user-edit-form">
+      <table>
+        <tbody>
+          <tr>
+            <th><%= f.label :ユーザー名 %></th>
+            <td><%= f.text_field :name %></td>
+          </tr>
+
+          <tr>
+            <th><%= f.label :アイコン %></th>
+            <td><%= f.file_field :icon %></td>
+          </tr>
+
+          <tr>
+            <th><%= f.label :メールアドレス %></th>
+            <td><%= f.email_field :email %></td>
+          </tr>
+
+          <tr>
+            <th><%= f.label :新しいパスワード %></th>
+            <td><%= f.password_field :password %></td>
+          </tr>
+
+          <tr>
+            <th><%= f.label :新しいパスワード（確認用） %></th>
+            <td><%= f.password_field :password_confirmation %></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="user-change-btn">
+        <%= f.submit '更新' %>
+      </div>
+
+  </div>
+
+<% end %>
+
 </div>

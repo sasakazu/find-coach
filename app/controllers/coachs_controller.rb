@@ -8,6 +8,7 @@ class CoachsController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    @coach = Coach.find(params[:id])
   end
 
 
