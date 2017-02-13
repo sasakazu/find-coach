@@ -14,9 +14,12 @@
       <li><%= f.label :名前 %></li>
       <li><%= f.text_field :name %></li>
 
+      <li><%= f.label :アイコン %></li>
+      <li><%= f.file_field :face %></li>
+
       <li><%= f.label :性別 %></li>
-      <label><%= f.radio_button :sex, "男" %>男</label>
-      <label><%= f.radio_button :sex, "女" %>女</label>
+      <label><%= f.radio_button :sex, "男性" %>男</label>
+      <label><%= f.radio_button :sex, "女性" %>女</label>
 
       <li><%= f.label :年齢 %></li>
       <%= f.select :age, { "1" => "1",
