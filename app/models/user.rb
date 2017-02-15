@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :coaches
+
 
   mount_uploader :icon, ImageUploader
   has_secure_password

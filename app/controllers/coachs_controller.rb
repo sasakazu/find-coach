@@ -15,15 +15,22 @@ class CoachsController < ApplicationController
 
 
     def create
-      @coach = Coach.new(coach_params)
+      @coach = current_user.coaches.build(coach_params)
       if @coach.save
-        redirect_to root_url
+        redirect_to current_user
       else
         render 'new'
       end
     end
 
 
+    def show
+      @coach = Coach.find(params[:id])
+    end
+
+    def index
+
+    end
 
 
 

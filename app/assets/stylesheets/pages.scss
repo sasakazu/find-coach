@@ -13,7 +13,8 @@
   }
 
   h2 {
-    margin-bottom: 77px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
   }
 
@@ -28,6 +29,15 @@
   }
 
 }
+
+
+.thumbnail {
+  img {
+    height: 200px!important;
+  }
+}
+
+
 
 
 // about.html.erb
@@ -55,7 +65,7 @@
 .bg-inner {
   padding-top: 150px;
   padding-bottom: 350px;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .6);
   text-align: center;
 }
 

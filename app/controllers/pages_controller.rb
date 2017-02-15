@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   def home
     @coachs = Coach.all
     @users = User.all
+
   end
 
 
@@ -14,7 +15,7 @@ class PagesController < ApplicationController
           end
 
           def coach_params
-            params.require(:coach).permit(:sex, :age, :area, :jangle, :name)
+            params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :user_id)
           end
 
 

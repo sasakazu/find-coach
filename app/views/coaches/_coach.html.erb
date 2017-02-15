@@ -2,7 +2,7 @@
 <div class="col-md-4">
 
   <div class="thumbnail">
-    <!-- <img src="assets/kids.jpg" alt="..."> -->
+
     <%= image_tag coach.face %>
 
     <div class="caption">
@@ -10,8 +10,7 @@
         <p><%= coach.sex %></p>
         <p><%= coach.age %> 歳</p>
         <p><%= coach.jangle %></p>
-
-      <p><a href="#" class="btn btn-primary" role="button">詳しく見る</a></p>
+      <p><%= link_to '詳しく見る', coach, { :class => "btn btn-primary" } %></p>
     </div>
 
   </div>
