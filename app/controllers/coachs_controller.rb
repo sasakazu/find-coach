@@ -6,9 +6,24 @@ class CoachsController < ApplicationController
   end
 
 
+  def show
+
+  end
+
   def edit
     @user = User.find(params[:id])
     @coach = Coach.find(params[:id])
+  end
+
+  def update
+    @coach = Coach.find(params[:id])
+    if @coach.update_attributes(coach_params)
+      flash[:success] = "Profile updated"
+          redirect_to @coach
+    else
+      render 'edit'
+    end
+
   end
 
 
@@ -29,15 +44,21 @@ class CoachsController < ApplicationController
     end
 
     def index
+      @coachs = Coach.all
 
     end
 
 
 
   private
+            #
+            # def coach_params
+            #   params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face)
+            # end
 
-            def coach_params
-              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face)
+
+            def user_params
+                params.require(:user).permit(:name, :email, :icon, :password, :password_confirmation)
             end
 
 

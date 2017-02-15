@@ -3,7 +3,7 @@
 
   <%= form_for @coach, :url => { :action => :update } do |f| %>
 
-  <div class="user-edit-form">
+  <div class="coach-edit-form">
       <table>
         <tbody>
           <tr>
@@ -13,22 +13,22 @@
 
           <tr>
             <th><%= f.label :性別 %></th>
-            <td><%= f.file_field :sex %></td>
+            <td><%= f.text_field :sex %></td>
           </tr>
 
           <tr>
             <th><%= f.label :年齢 %></th>
-            <td><%= f.email_field :age %></td>
+            <td><%= f.text_field :age %></td>
           </tr>
 
           <tr>
             <th><%= f.label :活動場所 %></th>
-            <td><%= f.password_field :area %></td>
+            <td><%= f.text_field :area %></td>
           </tr>
 
           <tr>
             <th><%= f.label :ジャンル %></th>
-            <td><%= f.password_field :jangle %></td>
+            <td><%= f.text_field :jangle %></td>
           </tr>
 
         </tbody>

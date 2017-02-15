@@ -48,8 +48,19 @@
       background-color: #f6f8fa;
       display: block;
     }
+
+    a:hover {
+      color: #fff;
+      background-color: #434a54;
+      filter: alpha(opacity=70);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      text-decoration: none;
+    }
+    }
+
   }
-}
+
 
 
 // show.html.erb
@@ -131,5 +142,13 @@
     background-color: #fff;
     color: #00c4ac;
     border-radius: 3px;
+  }
+
+  input[type="submit"]:hover {
+
+    background-color: #00c4ac;
+    color: #fff;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
 }
