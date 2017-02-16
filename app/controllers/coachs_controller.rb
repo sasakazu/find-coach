@@ -45,16 +45,18 @@ class CoachsController < ApplicationController
 
     def index
       @coachs = Coach.all
+      @users = User.all
+
 
     end
 
 
 
   private
-            #
-            # def coach_params
-            #   params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face)
-            # end
+
+            def coach_params
+              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face, :when, :money)
+            end
 
 
             def user_params
