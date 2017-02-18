@@ -7,9 +7,15 @@
       <table>
         <tbody>
           <tr>
-            <th><%= f.label :ユーザー名 %></th>
+            <th><%= f.label :コーチ名 %></th>
             <td><%= f.text_field :name %></td>
           </tr>
+
+          <tr>
+            <th><%= f.label :アイコン %></th>
+            <td><%= f.file_field :face %></td>
+          </tr>
+
 
           <tr>
             <th><%= f.label :性別 %></th>
@@ -18,7 +24,7 @@
 
           <tr>
             <th><%= f.label :年齢 %></th>
-            <td><%= f.text_field :age %></td>
+            <td><%= f.text_field :age %> 歳</td>
           </tr>
 
           <tr>
@@ -30,6 +36,12 @@
             <th><%= f.label :ジャンル %></th>
             <td><%= f.text_field :jangle %></td>
           </tr>
+
+          <tr>
+            <th><%= f.label :希望報酬 %></th>
+            <td><%= f.text_field :money %></td>
+          </tr>
+
 
         </tbody>
       </table>

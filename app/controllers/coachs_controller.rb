@@ -7,11 +7,11 @@ class CoachsController < ApplicationController
 
 
   def show
+    @coach = Coach.find(params[:id])
 
   end
 
   def edit
-    @user = User.find(params[:id])
     @coach = Coach.find(params[:id])
   end
 
@@ -38,11 +38,6 @@ class CoachsController < ApplicationController
       end
     end
 
-
-    def show
-      @coach = Coach.find(params[:id])
-    end
-
     def index
       @coachs = Coach.all
       @users = User.all
@@ -55,7 +50,7 @@ class CoachsController < ApplicationController
   private
 
             def coach_params
-              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face, :when, :money)
+              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face, :when, :money,:user_id)
             end
 
 
