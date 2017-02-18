@@ -11,7 +11,7 @@
     </div>
 
     <div class="col-md-8 user-show-right">
-      <h2><%= @user.name %></h2>
+      <h2><%= link_to @user.name, @user %></h2>
       <p><%= @user.email %></p>
       <%= link_to 'プロフィール編集', edit_user_path %>
     </div>

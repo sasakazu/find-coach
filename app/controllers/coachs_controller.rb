@@ -50,7 +50,7 @@ class CoachsController < ApplicationController
   private
 
             def coach_params
-              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face, :when, :money,:user_id)
+              params.require(:coach).permit(:sex, :age, :area, :jangle, :name, :face, :when, :money, :user_id, :explain)
             end
 
 

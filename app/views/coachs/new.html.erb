@@ -11,7 +11,7 @@
     <ul>
       <%= form_for @coach, :url => {:action => :create} do |f| %>
 
-      <li><%= f.label :コーチ名 %></li>
+      <li><%= f.label :コーチ名 %> (必須)</li>
       <li><%= f.text_field :name %></li>
 
 
@@ -36,7 +36,7 @@
       <li><%= f.label :エリア %></li>
       <li><%= f.text_area :area, :placeholder => "渋谷区周辺" %></li>
 
-      <li><%= f.label :ジャンル %></li>
+      <li><%= f.label :ジャンル %> (必須)</li>
       <li><%= f.text_area :jangle, :placeholder => "サッカー、野球、テニス、ゲーム" %></li>
 
       <li><%= f.label :希望時間・期間 %></li>
@@ -44,6 +44,9 @@
 
       <li><%= f.label :希望報酬・年俸 %></li>
       <li><%= f.text_area :money, :placeholder => "一万円、五百円など給料を報酬を記入してね。" %></li>
+
+      <li><%= f.label :詳細 %></li>
+      <li><%= f.text_area :explain, :placeholder => "コーチ内容を書いてね。" %></li>
 
 
 

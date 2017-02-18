@@ -4,18 +4,26 @@
 
 
   <div class="container">
+    <h2 class="coach-show-title">コーチ詳細</h2>
 
-    <h3><%= @coach.name %></h3>
-      <p><%= @coach.sex %></p>
-      <p><%= @coach.age %> 歳</p>
-      <p><%= @coach.jangle %></p>
+    <div class="coach-show-main">
+
+
+    <%= image_tag @coach.face, { :class => "img-circle" } %>
+
+    <h3>コーチ名：<%= @coach.name %></h3>
+      <p>性別：<%= @coach.sex %></p>
+      <p>年齢：<%= @coach.age %> 歳</p>
+      <p>ジャンル：<%= @coach.jangle %></p>
+
+      <div class="send-mail-btn">
+        <%= link_to '相談する' %>
+      </div>
 
   </div>
+  <!-- coach-show-main -->
 
-  <!-- <% if current_user %> -->
-
-    <%= link_to 'edit', edit_coach_path(current_user) %>
-<!-- <% end %> -->
-
+</div>
+<!-- container -->
 
 <%= render 'shared/footer' %>

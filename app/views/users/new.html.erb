@@ -11,17 +11,17 @@
 
     <%= form_for(@user) do |f| %>
 
-    <li><%= f.label :名前 %></li>
+    <li><%= f.label :名前 %>（ 必須 ）</li>
     <li><%= f.text_field :name %></li>
 
-    <li><%= f.label :メールアドレス %></li>
+    <li><%= f.label :メールアドレス %>（ 必須 ）</li>
     <li><%= f.email_field :email %></li>
 
 
-    <li><%= f.label :パスワード %></li>
+    <li><%= f.label :パスワード %>（ 必須・６文字以上 ）</li>
     <li><%= f.password_field :password %></li>
 
-    <li><%= f.label :パスワード %></li>
+    <li><%= f.label :パスワード %>（ 確認用 ）</li>
     <li><%= f.password_field :password_confirmation %></li>
 
     <li><%= f.submit '送信' %></li>

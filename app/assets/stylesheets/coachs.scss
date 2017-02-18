@@ -83,3 +83,63 @@
 
 .index-roop {
 }
+
+// show.html.erb
+
+
+.coach-show-main {
+
+  text-align: center;
+  border: 2px solid #ccc;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  margin-bottom: 100px;
+
+  img {
+    width: 140px;
+    height: 140px;
+  }
+
+  p {
+    padding-top: 8px;
+  }
+
+  h3 {
+
+    padding-bottom: 25px;
+    padding-top: 11px;
+
+  }
+
+
+}
+
+.coach-show-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.send-mail-btn {
+
+
+  a {
+    color: #00c4ac;
+    border: 1px solid #00c4ac;
+    padding: 7px 30px;
+    display: inline-block;
+    margin-top: 30px;
+
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #00c4ac;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+}

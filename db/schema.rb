@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170216042237) do
+ActiveRecord::Schema.define(version: 20170218083959) do
 
   create_table "coaches", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170216042237) do
     t.integer  "user_id"
     t.integer  "money"
     t.string   "when"
+    t.text     "explain"
   end
 
   add_index "coaches", ["user_id"], name: "index_coaches_on_user_id"
